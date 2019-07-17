@@ -83,7 +83,7 @@ class ThreadSafeSingleton {
 // 5th most widely used
 class ThreadSafeSingleton2 {
 
-  private static ThreadSafeSingleton2 instance;
+  private volatile static ThreadSafeSingleton2 instance;
 
   private ThreadSafeSingleton2() {}
 
